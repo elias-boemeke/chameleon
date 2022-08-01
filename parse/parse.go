@@ -62,14 +62,14 @@ func ParseArgs(args []string) optmap  {
 func PrintUsage() {
 	sUsage := `Usage:
         encrypt FILES (file or directory) and save encrypted content in TDIR
-        $ cham -e FILES TDIR
+        $ chameleon -e FILES TDIR
 
         list encrypted files in DIR by number
-        $ cham -l DIR
+        $ chameleon -l DIR
 
         decrypt directory DIR; optionally select only specific files with the selection pattern
         pattern: \d+(-\d+)?(,\d+(-\d+)?)*  ;  i.e. '5,7-12,17'
-        $ cham -d DIR [-p SP]
+        $ chameleon -d DIR [-p SP]
 `
 	fmt.Println(sUsage)
 }
